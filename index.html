@@ -1,0 +1,212 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>流体导航动画</title>
+    <link rel="stylesheet" href="look.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+</head>
+<body style="width: 100%;">
+<a name="miao"></a>
+<nav>
+    <ul id="nav_ul">
+        <li class=
+                    "active"><a href="">龙眼视频</a></li>
+        <li><a href="">每周看龙华</a></li>
+    </ul>
+</nav>
+
+<!--内容-->
+<!--龙眼视频-->
+<div class="allvideo" id="allvideo" style="width: 100%;">
+    <div class="lyvideo">
+        <ul>
+            <li>
+
+                <h4 class="video_title">防森林火灾，保绿色家园</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title"> “河美龙华小课堂”（上）——河道治理</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" controls="" preload="" poster="http://www.szlhq.gov.cn/images/yshj_banner2019920.png"></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title">龙华区文艺轻骑兵巡回演出启动</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title">防森林火灾，保绿色家园</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title">防森林火灾，保绿色家园</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+
+            </li>
+        </ul>
+        <div class="goTOP"><a href="#miao">回到顶部</a></div>
+    </div>
+
+    <!--每周看龙华-->
+    <div class="lookingLH" style="display: none;">
+        <ul>
+            <li>
+                <h4 class="video_title">11111</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title"> “河美龙华小课堂”（上）——河道治理</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title">龙华区文艺轻骑兵巡回演出启动</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title">防森林火灾，保绿色家园</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+            </li>
+
+            <li>
+                <h4 class="video_title">防森林火灾，保绿色家园</h4>
+                <div class="video_content">
+                    <video src="http://www.szlhq.gov.cn/lhqyhyshj/xgbd/201909/P020190917595917151350.mp4" width="100%" hieght="auto" poster="videoimg.png" controls="" preload=""></video>
+                </div>
+                <div class="data">2019-10-16</div>
+
+            </li>
+        </ul>
+
+        <div class="goTOP"><a href="#miao">回到顶部</a></div>
+    </div>
+   <!--<a  class="goTOP" href="#miao">回到顶部</a>-->
+</div>
+
+<script>
+    var nav = $('nav');
+    var line = $('<div />').addClass('line');
+
+    line.appendTo(nav);
+
+    var active = nav.find('.active');
+    var pos = 0;
+    var wid = 0;
+
+    if(active.length) {
+        pos = active.position().left;
+        wid = active.width();
+        line.css({
+            left: pos,
+            width: wid
+        });
+    }
+
+    nav.find('ul li a').click(function(e) {
+        if(!$(this).parent().hasClass('active')) {
+            e.preventDefault();
+
+            var _this = $(this);
+
+            nav.find('ul li').removeClass('active');
+
+            var position = _this.parent().position();
+            var width = _this.parent().width();
+
+            if(position.left >= pos) {
+                line.animate({
+                    width: ((position.left - pos) + width)
+                }, 300, function() {
+                    line.animate({
+                        width: width,
+                        left: position.left
+                    }, 150);
+                    _this.parent().addClass('active');
+                });
+            } else {
+                line.animate({
+                    left: position.left,
+                    width: ((pos - position.left) + wid)
+                }, 300, function() {
+                    line.animate({
+                        width: width
+                    }, 150);
+                    _this.parent().addClass('active');
+                });
+            }
+
+            pos = position.left;
+            wid = width;
+        }
+    });
+
+// 切换
+    var navUL = document.getElementById("nav_ul");
+    var navlis = navUL.children;
+
+    var all = document.getElementById("allvideo");
+    var allvideo = all.children;
+    // 1.给导航栏注册事件
+    for(var i = 0;i < navlis.length;i++){
+        navlis[i].index = i;
+        navlis[i].onmouseenter = function () {
+
+            for(var i = 0;i < allvideo.length;i++){
+                allvideo[i].style.display = "none";
+            }
+            var icon = this.index;
+            allvideo[icon].style.display = "block";
+        }
+    }
+
+    $(function () {
+        $("video").lazyload({
+            effect: "fadeIn",
+            // threshold : 1
+        });
+    })
+
+
+
+
+
+</script>
+
+</body>
+</html>
